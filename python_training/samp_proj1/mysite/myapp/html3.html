@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Search by p_name</title>
+</head>
+<body>
+<form action="/search/" method="post">{% csrf_token %}
+    <input type="text" name="p_city">
+    <input type="submit" value="Search">
+
+</form>
+
+<table>
+    <th>Name</th>
+    <th>Address</th>
+    <th>country</th>
+    {% for i in data %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.country}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+</body>
+</html>

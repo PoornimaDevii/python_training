@@ -1,0 +1,7 @@
+::
+
+    >>> from testing_doc_file import my_function
+    >>> my_function(2,3)
+    6
+    >>> my_function('a',3)
+    'aaa'
