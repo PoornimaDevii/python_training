@@ -1,11 +1,12 @@
 from sklearn.datasets import load_iris # iris is flower data
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import Perceptron
-
+from sklearn.preprocessing import StandardScaler
+import pandas as pd
 iris = load_iris()
 print(iris)
 
-x = iris.data[50:150,2:4] # 2:4 are the features selected to view the misclassification (lower misclass.. 
+x = iris.data[50:150,2:4] # 2:4 are the features selected to view the misclassification (lower misclass..
 y = iris.target[50:150]
 
 print(x)
@@ -14,6 +15,7 @@ print(y)
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3) # testing data will be 30% of the training data
 print(x_train.size)
 print(x_train.shape)
+
 
 ppn = Perceptron(max_iter=10, eta0=0.1) # the eta0 i the learning rate constant, # eta0, max_iter, features can be
 # modified, hence called hyper parameters
