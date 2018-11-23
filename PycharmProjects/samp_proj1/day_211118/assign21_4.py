@@ -1,0 +1,1 @@
+# To find all files with 0 bytes space, from a specific directory, and list out using subprocess/ os.walk

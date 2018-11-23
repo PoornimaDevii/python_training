@@ -1,0 +1,12 @@
+Generators are iterators, but you can only iterate over them once.
+
+
+                   It’s because they do not store all the values in memory, they generate the values on the fly. You use them by iterating over them, either with a ‘for’ loop or by passing them to any function or construct that iterates.
+
+
+                                             Most of the time generators are implemented as functions.
+
+                     However, they do not return a value, they yield it.
+
+
+                                                                            Here is a simple example of a generator function:

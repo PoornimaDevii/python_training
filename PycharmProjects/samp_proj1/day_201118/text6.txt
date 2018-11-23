@@ -1,0 +1,9 @@
+		Generators are iterators, but you can only iterate 
+		ver them once.
+		It’s because they do not store all the values in me
+		ory, they generate the values on the fly. You use t
+		Most of the time generators are implemented as func
+		ions.
+		However, they do not return a value, they yield it.
+		
+		Here is a simple example of a generator function:
